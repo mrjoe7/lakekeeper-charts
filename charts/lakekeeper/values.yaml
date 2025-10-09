@@ -26,7 +26,7 @@ catalog:
     # -- The image repository to pull from
     repository: quay.io/lakekeeper/catalog
     # -- The image tag to pull
-    tag: v0.10.0
+    tag: v0.10.2
     # -- The image pull policy
     pullPolicy: IfNotPresent
     # -- 65532 = nonroot of google container distroless
@@ -422,8 +422,6 @@ postgresql:
       - ReadWriteOnce
     # -- the StorageClass used by the PVC
     className:
-    # -- the size of PVC to request
-    size: 5Gi
 
 externalDatabase:
   # -- the type of external database.
